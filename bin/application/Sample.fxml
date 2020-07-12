@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SampleController">
+   <center>
+      <Pane prefHeight="587.0" prefWidth="785.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextArea layoutX="54.0" layoutY="89.0" prefHeight="351.0" prefWidth="695.0" />
+            <Label layoutX="54.0" layoutY="56.0" text="Enter Text to convert" />
+            <ScrollBar layoutX="735.0" layoutY="89.0" orientation="VERTICAL" prefHeight="349.0" prefWidth="14.0" />
+            <Button layoutX="54.0" layoutY="476.0" mnemonicParsing="false" onAction="#onClick" text="Convert">
+               <effect>
+                  <DropShadow color="#2ba118" height="62.51" radius="47.805" spread="0.08" width="130.71" />
+               </effect>
+            </Button>
+         </children>
+      </Pane>
+   </center>
+</BorderPane>
