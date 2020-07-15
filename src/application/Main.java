@@ -1,19 +1,16 @@
 package application;
 
 import javafx.application.Application;
-import javafx.stage.Modality;
-import javafx.stage.Stage;
+import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.layout.BorderPane;
-import javafx.fxml.FXMLLoader;
-
-import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
-import javafx.scene.control.Button;
-import javafx.scene.control.Label;
-import javafx.scene.layout.StackPane;
+import javafx.stage.Stage;
 
 public class Main extends Application {
+	
+	public static void main(String[] args) {
+		launch(args);
+	}
 
 
 	@Override
@@ -39,7 +36,5 @@ public class Main extends Application {
 
 	}
 
-	public static void main(String[] args) {
-		launch(args);
-	}
+	
 }

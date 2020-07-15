@@ -2,7 +2,6 @@ package application;
 
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
-import javafx.geometry.Insets;
 import javafx.scene.Scene;
 import javafx.scene.control.TextArea;
 import javafx.scene.layout.Pane;
@@ -26,10 +25,11 @@ public class ConvertedTextController {// extends Application {
 		txt=txt.replace(occ1,occ2);txt=txt.replace(occ11,occ22);
 		
 		//remplacement des retour charriot \r\n :
-		String occ3="\\r\\n";
+		String occ3="\\r\\n"; String occ4="\\n";
 		//par des rien (du vide):
-		String occ33="\n";
-		txt_conv=txt=txt.replace(occ3,occ33);
+		String occ33="\n";String occ44="\n";
+		txt=txt.replace(occ3,occ33);
+		txt_conv=txt=txt.replace(occ4,occ44);
 		
 		
 		//System.out.println("texte is :\n"+txt);
